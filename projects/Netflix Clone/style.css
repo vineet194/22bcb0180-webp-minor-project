@@ -1,0 +1,187 @@
+@font-face{
+    font-family: NetflixSans;
+    src: url("./assets/NetflixSans-Regular.otf");
+}
+@font-face{
+    font-family: NetflixSansBold;
+    src: url("./assets/NetflixSans-Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "NetflixSans", "sans-serif";
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("./assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1500px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main > .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50vw;
+    margin: auto;
+    padding-top: 15px;
+    height: 62px;
+}
+
+nav img{
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.nav-btns{
+    display: flex;
+    gap: 23px;
+}
+.btn{
+    padding: 3px 8px;
+    font-family: "NetflixSans", "sans-serif";
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(247, 245, 245, 0.4);
+    border-radius: 4px;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    font-family: "NetflixSans", "sans-serif";
+    padding: 7px 10px; 
+    text-align: center;
+    border-radius: 4px;
+    font-size: 15px;
+    border: none;
+}
+.nav-btns select{
+    position: relative;
+    z-index: 10;
+    padding: 3px 8px;
+    font-family: "NetflixSans", "sans-serif";
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(247, 245, 245, 0.4);
+    border-radius: 4px;
+}
+
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top:23px;
+    z-index: 10;
+    height: calc(100% - 77px);
+    font-family: "NetflixSans", "sans-serif";
+    color: white;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero > :first-child{
+    font-family: NetflixSansBold;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero :nth-child(2){
+    font-weight: 300px;
+    font-size: 24px;
+    text-align: center;
+}
+.hero :nth-child(3){
+    font-weight: 300px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(65, 64, 64);
+}
+
+
+.hero-btns{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.main input{
+    padding: 15px 125px 15px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(247, 245, 245, 0.4)
+}
+
+.btn-red{
+    background-color: red;
+    font-family: "NetflixSansBold", "sans-serif";
+    border: none;
+    padding: 11px 25px; 
+    font-size: 15px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+@media (max-width: 1920px){
+    nav{
+        max-width: 80vw;
+    }
+
+}
+
+@media (max-width: 1280px){
+    nav{
+        max-width: 95vw;
+    }
+    .hero-btns{
+        flex-direction: column;
+    }
+    .hero > :first-child{
+        font-size: 36px;
+    }
+    .hero :nth-child(2){
+        font-size: 12px;
+    }
+    .hero :nth-child(3){
+        font-size: 10px;
+    }
+    
+}

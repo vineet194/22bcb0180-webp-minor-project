@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question4</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex-row">
+        <div class="container flex-row">
+            <a href="#">
+                <img src="./pizza.png" alt="websitelogo" height="60px">
+            </a>
+            <a href="#" id="about">
+                <div>About</div>
+            </a>
+            <a href="#" id="contact">
+                <div>Contact Us</div>
+            </a>
+            <a href="#" id="order">
+                <div>Order Now!</div>
+            </a>
+        </div>
+    </nav>
+    <div id="main">
+        <form id="pizza_order_form" class="main container flex-row center-items">
+            <div id="main_right" class="flex-col">
+                <div id="user_info" class="container flex-col">
+                    <div>
+                        <h1>Name</h1>
+                        <input type="text" id="name" name="name" title="Enter your name" placeholder="enter your name"
+                            required autocomplete="name">
+                    </div>
+                    <div>
+                        <h1>Address</h1>
+                        <input type="text" id="address" name="address" title="Enter delivery address"
+                            placeholder="enter delivery address" autocomplete="address-level1">
+                    </div>
+                    <div>
+                        <h1>Phone Number</h1>
+                        <div class="flex-row">
+                            <div id="country_code">
+                                <p>+91</p>
+                            </div>
+                            <input type="text" id="phnum" name="phnum" title="Enter your phone number"
+                                placeholder="enter your phone number" required autocomplete="mobile">
+                        </div>
+                    </div>
+                </div>
+                <div id="pizza_info" class="container flex-col">
+                    <h1>Pizza Choice</h1>
+                    <div class="flex-col center-items">
+                        <table id="order_table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Unit Price</th>
+                                    <th>Quantity</th>
+                                    <th>Unit Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Big Italy</td>
+                                    <td>₹ 12.00</td>
+                                    <td>
+                                        <input class="pizza_quantity" type="number" pattern="\d*" min="0" max="10"
+                                            step="1" name="quantity_bigitaly" id="quantity_bigitaly" title="Quantity"
+                                            placeholder="0" value="0">
+                                    </td>
+                                    <td>
+                                        <input class="unit_total" type="text" name="unit_total_bigitaly"
+                                            id="unit_total_bigitaly" readonly placeholder="0.00" value="0" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Meat Lover</td>
+                                    <td>₹ 10.00</td>
+                                    <td>
+                                        <input class="pizza_quantity" type="number" min="0" max="10"
+                                            name="quantity_meatlover" id="quantity_meatlover" title="Quantity"
+                                            placeholder="0" value="0">
+                                    </td>
+                                    <td>
+                                        <input class="unit_total" type="text" name="unit_total_meatlover"
+                                            id="unit_total_meatlover" readonly placeholder="0.00" value="0" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Veggie Lover</td>
+                                    <td>₹ 9.50</td>
+                                    <td>
+                                        <input class="pizza_quantity" type="number" min="0" max="10"
+                                            name="quantity_veglover" id="quantity_veglover" title="Quantity"
+                                            placeholder="0" value="0">
+                                    </td>
+                                    <td>
+                                        <input class="unit_total" type="text" name="unit_total_veglover"
+                                            id="unit_total_veglover" readonly placeholder="0.00" value="0" disabled>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex-col">
+                        <h1>Total Amount: </h1>
+                        <div id="total" class="flex-col">
+                            <div id="order_total_div" class="flex-row">
+                                <h2>Order total</h2>
+                                <input type="text" id="order_total" name="order_total" readonly placeholder="0.00"
+                                    disabled>
+                            </div>
+                            <div id="tax_div" class="flex-row">
+                                <h2>GST (18%)</h2>
+                                <input type="text" id="tax" name="tax" readonly placeholder="0.00" disabled>
+                            </div>
+                            <div id="final_amt_div" class="flex-row">
+                                <h2>Final Amount</h2>
+                                <input type="text" id="final_amt" name="final_amt" readonly placeholder="$ 0.00"
+                                    disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sub_res_div" class="flex-row center-items">
+                        <input id="submit" type="submit" value="Proceed to Payment">
+                        <input id="reset" type="reset" value="Clear">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

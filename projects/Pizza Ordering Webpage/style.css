@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.center-items{
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    height: 80px;
+    background-color: blueviolet;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav > .container{
+    gap: 50px;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main{
+    margin: 0px auto;
+    padding-top: 50px;
+    width: 90vw;
+    gap: 30px;
+}
+
+#main_left{
+    width: 60%;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+#main_right{
+    width: 40%;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+#user_info{
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pizza_info{
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type='text']::placeholder, input[type='number']::placeholder{
+    padding: 5px;
+}
+
+#user_info input[type='text']{
+    height: 25px;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid grey;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#pizza_info input[type='text'], #pizza_info input[type='number']{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+
+#user_info h1, #pizza_info h1{
+    font-size: 23px;
+}
+
+#user_info h2, #pizza_info h2{
+    font-size: 20px;
+}
+
+#country_code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    border-right: 0px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+#country_code > p{
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+#order_table{
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+#order_table th{
+    font-size: 20px;
+}
+
+#order_table td{
+    font-size: 15px;
+    height: 20px;
+    width: 30px;
+}
+
+.pizza_quantity{
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.unit_total{
+    border: 0;
+    font-size: 15px;
+    color: black;
+    filter: none;
+}
+
+#total{
+    width: 80%;
+    margin: 10px auto;
+    gap: 2px;
+}
+
+#order_total_div, #tax_div, #final_amt_div{
+    justify-content:space-between;
+    align-items: center;
+}
+
+#total input[type='text']{
+    border: 0;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.required_text{
+    display: none;
+    color: red;
+    margin-top: 2px;
+}
+
+#sub_res_div{
+    justify-content: space-around;
+}
+
+#submit{
+    width: 300px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset{
+    width: 70px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:active{
+    background-color: rgb(138, 44, 226);
+}
